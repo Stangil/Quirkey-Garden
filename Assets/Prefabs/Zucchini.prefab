@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8560661200527268068}
   - component: {fileID: 9139669456045792197}
   - component: {fileID: 1994823433601831364}
+  - component: {fileID: 6012963065448613685}
+  - component: {fileID: -5890357838999907790}
   m_Layer: 0
   m_Name: Zucchini
   m_TagString: Untagged
@@ -94,3 +96,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1be21a4bfe4a8418ecbcf561e60e24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileSpeed: 1
+  spin: 1
+--- !u!61 &6012963065448613685
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8934538549048135701}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.56, y: 0.56}
+    newSize: {x: 0.56, y: 0.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.56, y: 0.56}
+  m_EdgeRadius: 0
+--- !u!114 &-5890357838999907790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8934538549048135701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e73c9196a5d68314995a585b6504025a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
