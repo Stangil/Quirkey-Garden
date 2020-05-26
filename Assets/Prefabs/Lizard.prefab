@@ -118,6 +118,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
+  explosionParticles: {fileID: 540991786026425123, guid: 9e452e1fc343c58479e91764c4a27f9d,
+    type: 3}
+  durationOfExplosion: 1
 --- !u!61 &-6971664760550067213
 BoxCollider2D:
   m_ObjectHideFlags: 0

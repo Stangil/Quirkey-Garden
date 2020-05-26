@@ -7,7 +7,10 @@ public class Attacker : MonoBehaviour
     [Range (0f,5f)]
     float currentSpeed = 0.0f;
     [SerializeField] int health = 200;
-  
+    [Header("Effects")]
+    [SerializeField] GameObject explosionParticles;
+    [SerializeField] float durationOfExplosion = 1.0f;
+
     void Update()
     {
         transform.Translate(Vector2.left * currentSpeed * Time.deltaTime);
@@ -39,6 +42,17 @@ public class Attacker : MonoBehaviour
 
     private void EnemyDeath()
     {
+        TriggerDeathVFX();
         Destroy(gameObject);
+    }
+
+    private void TriggerDeathVFX()
+    {
+        if (!explosionParticles)
+        {
+            return;
+        }
+        GameObject explosion = Instantiate(explosionParticles, transform.position, Quaternion.identity) as GameObject;
+        Destroy(explosion, durationOfExplosion);
     }
 }
