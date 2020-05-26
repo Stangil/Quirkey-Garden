@@ -31,7 +31,6 @@ public class Attacker : MonoBehaviour
 
     private void ProcessHit(DamageDealer damageDealer)
     {
-        Debug.Log("I'm Hit!");
         health -= damageDealer.GetDamage();
         damageDealer.Hit();
         if (health <= 0)
