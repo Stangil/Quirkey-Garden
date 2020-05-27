@@ -1432,6 +1432,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trophy
       objectReference: {fileID: 0}
+    - target: {fileID: 7000150687573868256, guid: 1129a792d6f5bff4c8f0fa82c51dd3bc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7000150687573868258, guid: 1129a792d6f5bff4c8f0fa82c51dd3bc,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -6,13 +6,13 @@ public class StarsDisplay : MonoBehaviour
 {
     [SerializeField] int stars = 100;
     Text starText;
-     void Start()
+    void Start()
     {
         starText = GetComponent<Text>();
         UpdateDisplay();
     }
 
-   private void UpdateDisplay()
+    private void UpdateDisplay()
     {
         starText.text = stars.ToString();
     }
@@ -27,6 +27,21 @@ public class StarsDisplay : MonoBehaviour
         {
             stars -= starsToSpend;
             UpdateDisplay();
+        }
+    }
+    public int GetStarsTotal()
+    {
+        return stars;
+    }
+    public bool HaveEnoughStars(int amount)
+    {
+        if (amount <= stars)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }
