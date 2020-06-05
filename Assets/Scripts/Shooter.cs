@@ -8,9 +8,11 @@ public class Shooter : MonoBehaviour
     [SerializeField] GameObject projectile;
     [SerializeField] GameObject gun;
     AttackerSpawner myLaneSpawner;
+    Animator animator;
     private void Start()
     {
         SetLaneSpawner();
+        animator = GetComponent<Animator>();
     }
 
     private void SetLaneSpawner()
@@ -25,19 +27,15 @@ public class Shooter : MonoBehaviour
             }
         }
     }
-
-
     private void Update()
     {
         if (IsAttacherInLane())
         {
-            Debug.Log("Attack");
-            //TODO change animation state to attack
+            animator.SetBool("IsAttacking", true);
         }
         else
         {
-            Debug.Log("Sit and Wait");
-            //TODO change animation state to  Idle
+            animator.SetBool("IsAttacking", false);
         }
     }
 
