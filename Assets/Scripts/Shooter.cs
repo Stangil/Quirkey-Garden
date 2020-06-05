@@ -53,6 +53,7 @@ public class Shooter : MonoBehaviour
 
     public void Fire()
     {
+        Debug.Log("Firing!!!!");
         Instantiate(projectile, gun.transform.position, transform.rotation);
     }
 }
