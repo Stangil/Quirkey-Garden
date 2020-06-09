@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 11227607844533048}
   - component: {fileID: 97940865}
   - component: {fileID: 260509519}
+  - component: {fileID: 6020891503747572853}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -330,3 +331,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.82964325, y: 0.80432034}
   m_EdgeRadius: 0
+--- !u!114 &6020891503747572853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7428391259054862052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffae8e7ba10c1d5419942d952174acdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
+  explosionParticles: {fileID: 0}
+  durationOfExplosion: 1

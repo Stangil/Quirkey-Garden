@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 1156719262125812758}
   - component: {fileID: -4055372476304142502}
   - component: {fileID: 209624033}
+  - component: {fileID: 1700292128126319742}
   m_Layer: 0
   m_Name: Gravestone
   m_TagString: Untagged
@@ -200,3 +201,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1700292128126319742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2643444788806745244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffae8e7ba10c1d5419942d952174acdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 300
+  explosionParticles: {fileID: 0}
+  durationOfExplosion: 1
