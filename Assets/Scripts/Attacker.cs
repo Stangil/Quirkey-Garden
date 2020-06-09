@@ -10,6 +10,7 @@ public class Attacker : MonoBehaviour
     [Header("Effects")]
     [SerializeField] GameObject explosionParticles;
     [SerializeField] float durationOfExplosion = 1.0f;
+    GameObject currentTarget;
 
     void Update()
     {
@@ -18,6 +19,11 @@ public class Attacker : MonoBehaviour
     public void SetMovementSpeed(float speed)
     {
         currentSpeed = speed;
+    }
+    public void Attack(GameObject target)
+    {
+        GetComponent<Animator>().SetBool("IsAttacking", true);
+        currentTarget = target;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
