@@ -16,7 +16,7 @@ public class LevelLoader : MonoBehaviour
         }
         else
         {
-            LoadNextScene();
+            //LoadNextScene();
         }
     }
 
@@ -28,5 +28,10 @@ public class LevelLoader : MonoBehaviour
     public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+    public void LoadYouLose()
+    {
+        Debug.Log("Game over");
+        SceneManager.LoadScene("LoseScreen");
     }
 }
