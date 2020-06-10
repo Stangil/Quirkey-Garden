@@ -9,7 +9,7 @@ public class Fox : MonoBehaviour
         GameObject otherObject = collision.gameObject;
         if (otherObject.GetComponent<Defender>())
         {
-            if(otherObject.name == "Gravestone")
+            if(otherObject.GetComponent<Gravestone>())
             {
                 GetComponent<Animator>().SetTrigger("Jumping");
             }
