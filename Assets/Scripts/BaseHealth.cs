@@ -7,8 +7,10 @@ public class BaseHealth : MonoBehaviour
 {
     [SerializeField] int health = 100;
     Text healthText;
+    bool dead = false;
     void Start()
     {
+      
         healthText = GetComponent<Text>();
         UpdateDisplay();
     }
@@ -20,12 +22,15 @@ public class BaseHealth : MonoBehaviour
    
     public void DamageHealth(int damage)
     {
+        if (dead) { return; }
             health -= damage;
             UpdateDisplay();
         if(health <=0)
         {
             health = 0;
-            FindObjectOfType<LevelLoader>().LoadYouLose();
+            UpdateDisplay();
+            dead = true;
+            FindObjectOfType<LevelController>().LoseCondition();
         }
     }
 }

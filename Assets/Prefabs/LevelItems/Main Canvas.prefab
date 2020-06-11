@@ -935,3 +935,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  loseLabel: {fileID: 0}
