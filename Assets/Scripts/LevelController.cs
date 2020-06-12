@@ -38,6 +38,7 @@ public class LevelController : MonoBehaviour
         loseLabel.SetActive(true);
         GetComponent<AudioSource>().Play();
         StopSpawners();
+        Time.timeScale = 0;
         yield return new WaitForSeconds(waitToLoad);
     }
     IEnumerator HandleWinCondition()
