@@ -974,7 +974,7 @@ RectTransform:
   m_GameObject: {fileID: 1930829309}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.87343, y: 0.87343, z: 0.87343}
   m_Children: []
   m_Father: {fileID: 1528796755}
   m_RootOrder: 3
@@ -1028,7 +1028,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 979709939}
-        m_MethodName: LoadNextScene
+        m_MethodName: LoadOptions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1065,8 +1065,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282319103
-  m_fontColor: {r: 1, g: 0, b: 0.24696922, a: 1}
+    rgba: 4294937344
+  m_fontColor: {r: 0, g: 0.5456042, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
