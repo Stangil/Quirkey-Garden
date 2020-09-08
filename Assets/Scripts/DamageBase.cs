@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class DamageBase : MonoBehaviour
 {
-    private void OnTriggerEnter2D()
+    float damage = 1;
+    private void OnTriggerEnter2D(Collider2D otherCollider)
     {
-        FindObjectOfType<BaseHealth>().DamageHealth(10);
+        
+        FindObjectOfType<BaseHealth>().DamageHealth(damage);
+        Destroy(otherCollider.gameObject);
     }
 }

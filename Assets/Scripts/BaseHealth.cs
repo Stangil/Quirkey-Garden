@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class BaseHealth : MonoBehaviour
 {
-    [SerializeField] int health = 100;
+    float health = 5f;
     Text healthText;
     bool dead = false;
     void Start()
     {
-      
+        health -= PlayerPrefsController.GetDifficulty();
         healthText = GetComponent<Text>();
         UpdateDisplay();
     }
@@ -20,7 +20,7 @@ public class BaseHealth : MonoBehaviour
         healthText.text = health.ToString();
     }
    
-    public void DamageHealth(int damage)
+    public void DamageHealth(float damage)
     {
         if (dead) { return; }
             health -= damage;
